@@ -60,6 +60,11 @@ nav li {
     font-size: 200%;
     padding: 20px 30px;
 }
+
+.more-button {
+  display: block;
+  padding: 20px;
+}
 .plants {
     align-content: flex-start;
     display: flex;
