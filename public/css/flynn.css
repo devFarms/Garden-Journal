@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital@0;1&display=swap');
+
+/* CSS HEX */
+:root {
+    --white: #fff;
+    --glaucous: #7180acff;
+    --dark-cornflower-blue: #2b4570ff;
+    --light-blue: #a8d0dbff;
+    --dark-salmon: #e49273ff;
+    --burnished-brown: #a37a74ff;
+    --open-sans: 'Open Sans', sans-serif;
+    --playfair: 'Playfair Display', serif;
+}
+
+
+/* CSS HSL */
+--glaucous: hsla(225, 26%, 56%, 1);
+--dark-cornflower-blue: hsla(217, 45%, 30%, 1);
+--light-blue: hsla(193, 41%, 76%, 1);
+--dark-salmon: hsla(16, 68%, 67%, 1);
+--burnished-brown: hsla(8, 20%, 55%, 1);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-family: var(--open-sans);
+}
+
+nav {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+#search {
+    text-align: center;
+}
+
+#search > input[type=text] {
+    border: 1px solid gray;
+    font-family: var(--playfair);
+    font-size: 200%;
+    padding: 20px;
+    width: 70%;
+}
+#search > button {
+    background-color: var(--dark-cornflower-blue);
+    border: 1px solid gray;
+    color: var(--white);
+    font-family: var(--playfair);
+    font-size: 200%;
+    padding: 20px 30px;
+}
+.plants {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.plant {
+
+    background-color: var(--dark-cornflower-blue);
+    clear: both;
+    margin: 40px 6px;
+    padding: 0 0 30px 0;
+  }
+
+.plant h2 {
+    margin: 0 0 0 20px;
+  }
+
+.plant p {
+    margin: 0 0 0 20px;
+}
+
+.plant-image img {
+    height: 500px;
+    min-width: 300px;
+}
+
+.plant-image, .plant-info {
+
+}
+
+.plant-info > h2 {
+    font-family: var(--playfair);
+    font-size: 180%;
+}
